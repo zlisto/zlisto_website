@@ -1,3 +1,5 @@
+import { asset } from "../lib/asset";
+
 export function MetaversePage() {
   return (
     <>
@@ -16,7 +18,10 @@ export function MetaversePage() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container meta-grid">
           <article className="shot-card">
-            <img src="/assets/metaverse/metaverse-square.png" alt="Metaverse Square with Labubuldore" />
+            <img
+              src={asset("assets/metaverse/metaverse-square.png")}
+              alt="Metaverse Square with Labubuldore"
+            />
             <h3>Metaverse Square</h3>
             <p>
               The plaza hub. Every world in the registry gets a portal in the ring. Talk to
@@ -33,7 +38,10 @@ export function MetaversePage() {
           </article>
 
           <article className="shot-card">
-            <img src="/assets/metaverse/starter-world.png" alt="Starter World room with portal" />
+            <img
+              src={asset("assets/metaverse/starter-world.png")}
+              alt="Starter World room with portal"
+            />
             <h3>Starter World</h3>
             <p>
               An empty room waiting to become yours. Talk to Tauhid for a tour of the protocol, then

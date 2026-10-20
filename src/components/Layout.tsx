@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState, type ReactNode } from "react";
+import { asset } from "../lib/asset";
 
 const links = [
   { to: "/teaching", label: "Teaching" },
@@ -76,7 +77,7 @@ export function Layout({ children }: { children: ReactNode }) {
             </div>
             <p className="footer-meta">© Tauhid Zaman {new Date().getFullYear()}</p>
           </div>
-          <img className="footer-logo" src="/assets/brand/yale-logo.svg" alt="Yale" />
+          <img className="footer-logo" src={asset("assets/brand/yale-logo.svg")} alt="Yale" />
         </div>
       </footer>
     </>

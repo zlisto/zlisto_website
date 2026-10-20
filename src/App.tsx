@@ -9,7 +9,7 @@ import { ConsultingPage } from "./pages/ConsultingPage";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "") || "/"}>
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />

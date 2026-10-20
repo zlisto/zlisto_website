@@ -1,4 +1,5 @@
 import { research } from "../data/research";
+import { asset } from "../lib/asset";
 
 export function ResearchPage() {
   return (
@@ -37,7 +38,7 @@ export function ResearchPage() {
                 {(item.abstract || item.img) && (
                   <div className="research-body">
                     {item.abstract ? <p>{item.abstract}</p> : <div />}
-                    {item.img ? <img src={item.img} alt="" loading="lazy" /> : null}
+                    {item.img ? <img src={asset(item.img)} alt="" loading="lazy" /> : null}
                   </div>
                 )}
               </details>

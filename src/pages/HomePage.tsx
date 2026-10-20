@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import { asset } from "../lib/asset";
 
 export function HomePage() {
   return (
     <>
       <section className="hero">
         <div className="hero-media" aria-hidden>
-          <img src="/assets/brand/tauhid-hero.png" alt="" />
+          <img src={asset("assets/brand/tauhid-hero.png")} alt="" />
         </div>
         <div className="hero-content">
           <p className="kicker">Yale School of Management</p>
