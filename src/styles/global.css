@@ -707,9 +707,35 @@ select {
     grid-template-columns: 1fr;
   }
 
+  /* Narrow screens: stack the photo above the text instead of behind it,
+     so the overlay doesn't bury the photo. */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .hero-media {
+    position: relative;
+    inset: auto;
+    height: clamp(320px, 58vh, 540px);
+  }
+
+  .hero-media img {
+    object-position: 76% 20%;
+  }
+
+  .hero-media::after {
+    background: linear-gradient(
+      180deg,
+      rgba(4, 6, 12, 0.1) 0%,
+      rgba(4, 6, 12, 0) 45%,
+      rgba(4, 6, 12, 0.96) 100%
+    );
+  }
+
   .hero-content {
-    margin-left: auto;
-    margin-right: auto;
+    margin: -4.5rem auto 3rem;
   }
 
   .footer-logo {
