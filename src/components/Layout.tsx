@@ -4,9 +4,8 @@ import { asset } from "../lib/asset";
 
 const links = [
   { to: "/teaching", label: "Teaching" },
-  { to: "/research", label: "Research" },
   { to: "/publications", label: "Publications" },
-  { to: "/arcade", label: "Arcade" },
+  { to: "/arcade", label: "Arcade of Alexandria" },
   { to: "/metaverse", label: "Metaverse" },
   { to: "/consulting", label: "Consulting" },
 ];
