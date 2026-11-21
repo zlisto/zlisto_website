@@ -6,6 +6,7 @@ import { ResearchPage } from "./pages/ResearchPage";
 import { PublicationsPage } from "./pages/PublicationsPage";
 import { MetaversePage } from "./pages/MetaversePage";
 import { ConsultingPage } from "./pages/ConsultingPage";
+import { ArcadePage } from "./pages/ArcadePage";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/teaching" element={<TeachingPage />} />
           <Route path="/research" element={<ResearchPage />} />
           <Route path="/publications" element={<PublicationsPage />} />
+          <Route path="/arcade" element={<ArcadePage />} />
           <Route path="/metaverse" element={<MetaversePage />} />
           <Route path="/consulting" element={<ConsultingPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />

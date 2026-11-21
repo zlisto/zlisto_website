@@ -2,10 +2,17 @@ export type Course = {
   term: string;
   title: string;
   blurb: string;
-  href: string;
+  /** Course site. Leave out until the site exists; the card shows "coming soon". */
+  href?: string;
 };
 
 export const courses: Course[] = [
+  {
+    term: "Spring 2027",
+    title: "AI for Media, Entertainment, and Games",
+    blurb:
+      "Make the content people actually watch, hear, and play. Students use AI models and agents to create short-form video, films, music, and video games—from concept and script to the finished, shareable cut—and learn what this new creative stack means for the business of entertainment.",
+  },
   {
     term: "Fall 2026",
     title: "AI Foundations for Managers",

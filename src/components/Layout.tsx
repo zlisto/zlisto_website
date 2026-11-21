@@ -6,6 +6,7 @@ const links = [
   { to: "/teaching", label: "Teaching" },
   { to: "/research", label: "Research" },
   { to: "/publications", label: "Publications" },
+  { to: "/arcade", label: "Arcade" },
   { to: "/metaverse", label: "Metaverse" },
   { to: "/consulting", label: "Consulting" },
 ];
@@ -71,8 +72,14 @@ export function Layout({ children }: { children: ReactNode }) {
               >
                 GS
               </a>
-              <a href="https://twitter.com/zlisto" target="_blank" rel="noreferrer" aria-label="X">
-                𝕏
+              <a
+                href="https://www.linkedin.com/in/tauhid-zaman-7b700626/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+              >
+                in
               </a>
             </div>
             <p className="footer-meta">© Tauhid Zaman {new Date().getFullYear()}</p>
