@@ -6,7 +6,7 @@ export function HomePage() {
     <>
       <section className="hero">
         <div className="hero-media" aria-hidden>
-          <img src={asset("assets/brand/tauhid-hero.png")} alt="" />
+          <img src={asset("assets/brand/tauhid-hero-dbz.jpg")} alt="" />
         </div>
         <div className="hero-content">
           <p className="kicker">Yale School of Management</p>
@@ -17,8 +17,7 @@ export function HomePage() {
             Lecturer and Special Advisor for AI Initiatives at Yale School of Management.
           </p>
           <p className="hero-lead">
-            Teaching managers to build with AI, researching information and influence online, and
-            helping organizations put generative AI to work—carefully and usefully.
+            I teach managers how to build with AI and put it to work across their organizations.
           </p>
           <div className="actions">
             <Link className="btn btn-primary" to="/consulting">
@@ -30,10 +29,11 @@ export function HomePage() {
           </div>
           <div className="interest-row">
             <div className="label">Focus areas</div>
-            <span>Generative AI</span>
-            <span>Social Networks</span>
+            <span>AI Strategy</span>
             <span>Agents & Workflows</span>
-            <span>Metaverse Web</span>
+            <span>AI Content Creation</span>
+            <span>Rapid Prototyping with Vibe Coding</span>
+            <span>Social Networks</span>
           </div>
         </div>
       </section>
