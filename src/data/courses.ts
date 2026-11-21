@@ -12,6 +12,7 @@ export const courses: Course[] = [
     title: "AI for Media, Entertainment, and Games",
     blurb:
       "Make the content people actually watch, hear, and play. Students use AI models and agents to create short-form video, films, music, and video games—from concept and script to the finished, shareable cut—and learn what this new creative stack means for the business of entertainment.",
+    href: "https://zlisto.github.io/AI_MEG_2027_spring/index.html",
   },
   {
     term: "Fall 2026",
