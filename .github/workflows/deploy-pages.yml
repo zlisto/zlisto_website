@@ -27,6 +27,15 @@ jobs:
       - run: npm run build
       - name: SPA fallback for client routes
         run: cp dist/index.html dist/404.html
+      # Give each route its own page (e.g. teaching.html) so GitHub Pages serves
+      # /teaching with a 200 status instead of the 404 fallback. Routes are read
+      # from App.tsx, so new pages are picked up automatically.
+      - name: Static copies for each route
+        run: |
+          for route in $(grep -o 'path="/[a-z0-9_-]\+"' src/App.tsx | cut -d'"' -f2 | cut -c2-); do
+            cp dist/index.html "dist/$route.html"
+            echo "added dist/$route.html"
+          done
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
